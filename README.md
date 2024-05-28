@@ -61,3 +61,6 @@ reward = reward_function({
     'heading': current_heading  # current heading of the car
 })
 ```
+
+## 결과
+![initial](https://github.com/jindora/AWS-DeepRacer/assets/67107084/9dc75b01-330d-46fe-82de-3f130f5b484a)

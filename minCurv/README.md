@@ -29,15 +29,10 @@
 |13|	30.0|	2.00|
 |14|	30.0|	3.00|
 
-|제목|내용|설명|
-|------|---|---|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
-
 - **Framework : Tensorflow**
 - **Reinforcement learning algorithm : PPO**
 - **Hyperparameter**
+- 
 |Hyperparameter|	Value|
 |--------------|---------|
 |Gradient descent batch size|	64|

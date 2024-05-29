@@ -11,6 +11,7 @@
 - Sensor(s) : Camera
 - Action space type : Discrete
 - Action space
+
 ![initial](https://github.com/jindora/AWS-DeepRacer/assets/67107084/9dc75b01-330d-46fe-82de-3f130f5b484a)
 
 |No.|	Steering angle (°)|	Speed (m/s)|

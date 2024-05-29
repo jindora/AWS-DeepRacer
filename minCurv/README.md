@@ -1,7 +1,9 @@
-# minCuv (76점 / 25.067)
+# minCuv (63.6점 / 28.729)
+
 
 ## idea
 #### 자동차는 트랙의 가운데를 주행하지 않아도 되지만, 자동차의 중앙이 트랙의 밖으로 나가면 안된다. 현재 자동차의 진행 방향과 다음 waypoint로의 각도가 30도 이상이면 보상을 의미가 없을 정도로 낮은 숫자로 준다.
+
 
 ## 세부 조건
 - Race Type : Time trial
@@ -42,6 +44,7 @@
 |Learning rate|	0.0003|
 |Number of experience episodes between each policy-updating iteration|	20|
 |Number of epochs|	10|
+
 
 ## 주행 결과
 

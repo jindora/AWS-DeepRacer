@@ -43,7 +43,7 @@
 |Number of experience episodes between each policy-updating iteration|	20|
 |Number of epochs|	10|
 
-## 결과
+## 주행 결과
 
 |Trial    |Time (MM:SS.mmm)    |Trial results (% track completed)    |Status    |Off-track|    Off-track penalty    |Crashes    |Crash penalty|
 |-------|-------------|------------------------------|-------------|------------|--------------------|----------|--------------|

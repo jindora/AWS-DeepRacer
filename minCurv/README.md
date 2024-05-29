@@ -10,6 +10,7 @@
 - Action space type : Discrete
 - Action space
 ![initial](https://github.com/jindora/AWS-DeepRacer/assets/67107084/9dc75b01-330d-46fe-82de-3f130f5b484a)
+
 |No.|	Steering angle (°)|	Speed (m/s)|
 |----|-------------------|--------------|
 |0|	-30.0|	1.00|
@@ -27,6 +28,7 @@
 |12|	30.0|	1.00|
 |13|	30.0|	2.00|
 |14|	30.0|	3.00|
+
 |제목|내용|설명|
 |------|---|---|
 |테스트1|테스트2|테스트3|

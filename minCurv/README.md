@@ -43,50 +43,10 @@
 |Number of experience episodes between each policy-updating iteration|	20|
 |Number of epochs|	10|
 
-## 보상 함수
-```
-import math
-
-def reward_function(params):
-    # 주행 파라미터
-    waypoints = params['waypoints']
-    closest_waypoints = params['closest_waypoints']
-    heading = params['heading']
-
-    # Menger Curvature에 따라 계산된 이상적인 heading 값 구하기
-    next_point = waypoints[closest_waypoints[1]]
-    prev_point = waypoints[closest_waypoints[0]]
-    track_direction = math.atan2(next_point[1] - prev_point[1], next_point[0] - prev_point[0])
-    track_direction = math.degrees(track_direction)
-
-    # 현재 진행 방향과 다음 waypoint 사이의 각도 차이 계산
-    direction_diff = abs(track_direction - heading)
-    direction_diff = min(direction_diff, 360 - direction_diff)
-
-    # 방향 유지 보상
-    if direction_diff > 30:
-        # 각도 차이가 30도 이상일 때 매우 낮은 보상 (거의 의미 없는 수준)
-        return float(1e-10)  # 예를 들어 1e-10과 같은 매우 낮은 수 사용
-    else:
-        # 각도 차이가 30도 이내일 때 방향에 대한 보상은 cos 함수를 사용해 계산
-        return float(math.cos(math.radians(direction_diff)))
-
-# AWS DeepRacer 콘솔에서 함수 호출
-reward = reward_function({
-    'waypoints': waypoints,  # track waypoints
-    'closest_waypoints': [2, 3],  # indices of the closest waypoints
-    'heading': current_heading  # current heading of the car
-})
-```
-
 ## 결과
-
-![initial](https://github.com/jindora/AWS-DeepRacer/assets/67107084/460ecda6-e641-429f-8b38-4f31d278df93)
 
 |Trial    |Time (MM:SS.mmm)    |Trial results (% track completed)    |Status    |Off-track|    Off-track penalty    |Crashes    |Crash penalty|
 |-------|-------------|------------------------------|-------------|------------|--------------------|----------|--------------|
 |1|	00:28.729|	100%|	Lap complete|	1|	2 seconds|	0|	--|
 |2|	00:30.474|	100%|	Lap complete|	2|	4 seconds|	0|	--|
 |3|	00:33.132|	100%|	Lap complete|	3|	6 seconds|	0|	--|
-|4|	00:29.204|	100%|	Lap complete|	1|	2 seconds|	0|	--|
-|5|	00:35.409|	100%|	Lap complete|	4|	8 seconds|	0|	--|

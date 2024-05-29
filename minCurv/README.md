@@ -32,7 +32,7 @@
 - **Framework : Tensorflow**
 - **Reinforcement learning algorithm : PPO**
 - **Hyperparameter**
-- 
+
 |Hyperparameter|	Value|
 |--------------|---------|
 |Gradient descent batch size|	64|
@@ -80,5 +80,13 @@ reward = reward_function({
 ```
 
 ## 결과
-![initial](https://github.com/jindora/AWS-DeepRacer/assets/67107084/11b4f47b-4bb2-42ae-8d10-8b5265c8f6b4)
 
+![initial](https://github.com/jindora/AWS-DeepRacer/assets/67107084/460ecda6-e641-429f-8b38-4f31d278df93)
+
+|Trial    |Time (MM:SS.mmm)    |Trial results (% track completed)    |Status    |Off-track|    Off-track penalty    |Crashes    |Crash penalty|
+|-------|-------------|------------------------------|-------------|------------|--------------------|----------|--------------|
+|1|	00:28.729|	100%|	Lap complete|	1|	2 seconds|	0|	--|
+|2|	00:30.474|	100%|	Lap complete|	2|	4 seconds|	0|	--|
+|3|	00:33.132|	100%|	Lap complete|	3|	6 seconds|	0|	--|
+|4|	00:29.204|	100%|	Lap complete|	1|	2 seconds|	0|	--|
+|5|	00:35.409|	100%|	Lap complete|	4|	8 seconds|	0|	--|

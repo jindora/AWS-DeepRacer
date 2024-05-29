@@ -9,22 +9,37 @@
 - Sensor(s) : Camera
 - Action space type : Discrete
 - Action space
-No.	Steering angle (°)	Speed (m/s)
-0	-30.0	1.00
-1	-30.0	2.00
-2	-30.0	3.00
-3	-15.0	1.00
-4	-15.0	2.00
-5	-15.0	3.00
-6	0.0	1.00
-7	0.0	2.00
-8	0.0	3.00
-9	15.0	1.00
-10	15.0	2.00
-11	15.0	3.00
-12	30.0	1.00
-13	30.0	2.00
-14	30.0	3.00
+![initial](https://github.com/jindora/AWS-DeepRacer/assets/67107084/9dc75b01-330d-46fe-82de-3f130f5b484a)
+|No.|	Steering angle (°)|	Speed (m/s)|
+|----|-------------------|--------------|
+|0|	-30.0|	1.00|
+|1|	-30.0|	2.00|
+|2|	-30.0|	3.00|
+|3|	-15.0|	1.00|
+|4|	-15.0|	2.00|
+|5|	-15.0|	3.00|
+|6|	0.0|	1.00|
+|7|	0.0|	2.00|
+|8|	0.0|	3.00|
+|9|	15.0|	1.00|
+|10|	15.0|	2.00|
+|11|	15.0|	3.00|
+|12|	30.0|	1.00|
+|13|	30.0|	2.00|
+|14|	30.0|	3.00|
+
+- **Framework : Tensorflow**
+- **Reinforcement learning algorithm : PPO**
+- **Hyperparameter**
+|Hyperparameter|	Value|
+|--------------|---------|
+|Gradient descent batch size|	64|
+|Entropy|	0.01|
+|Discount factor|	0.99|
+|Loss type|	Huber|
+|Learning rate|	0.0003|
+|Number of experience episodes between each policy-updating iteration|	20|
+|Number of epochs|	10|
 
 ## 보상 함수
 ```
@@ -63,4 +78,5 @@ reward = reward_function({
 ```
 
 ## 결과
-![initial](https://github.com/jindora/AWS-DeepRacer/assets/67107084/9dc75b01-330d-46fe-82de-3f130f5b484a)
+![initial](https://github.com/jindora/AWS-DeepRacer/assets/67107084/11b4f47b-4bb2-42ae-8d10-8b5265c8f6b4)
+
